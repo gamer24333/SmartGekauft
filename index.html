@@ -19,10 +19,23 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Kopfbereich) -->
-    <header class="bg-blue-600 text-white text-center py-20 px-4">
+    <!-- Hero Section (Kopfbereich mit Social Media) -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">Die besten Gadgets aus meinen Videos</h1>
-        <p class="text-xl md:text-2xl max-w-2xl mx-auto opacity-90">Hier findest du alle Produkte, die ich getestet und für genial befunden habe. Klick dich durch!</p>
+        <p class="text-xl md:text-2xl max-w-2xl mx-auto opacity-90 mb-8">Hier findest du alle Produkte, die ich getestet und für genial befunden habe.</p>
+        
+        <!-- Social Media Buttons -->
+        <div class="flex justify-center gap-4 flex-wrap">
+            <a href="https://www.tiktok.com/@smart.gekauft" target="_blank" class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors shadow-lg">
+                TikTok
+            </a>
+            <a href="https://www.instagram.com/SmartGekauft" target="_blank" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg">
+                Instagram
+            </a>
+            <a href="https://www.youtube.com/channel/UC3wAlHRuH0T-pWTG6giwW_Q" target="_blank" class="bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg">
+                YouTube
+            </a>
+        </div>
     </header>
 
     <!-- Produkte Grid -->
@@ -31,43 +44,41 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <!-- Produkt 1: Ferrofluid (Beispiel aus deinem vorherigen Bild) -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="https://m.media-amazon.com/images/I/51fG9P0hGkL._AC_SL1500_.jpg" alt="Ferrofluid Lautsprecher" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Tanzendes Ferrofluid Display</h3>
-                    <p class="text-gray-600 mb-4 h-16 overflow-hidden">Das Venom-artige Fluid, das auf den Rhythmus deiner Musik reagiert. Der absolute Hingucker für jedes Setup!</p>
-                    <!-- HIER DEINEN AFFILIATE LINK EINTRAGEN -->
-                    <a href="DEIN_AMAZON_LINK_HIER" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors">
+            <!-- Produkt 1: Ferrofluid Lautsprecher -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <!-- HIER WIRD DAS BILD GELADEN -->
+                <img src="1000057603.png" alt="Ferrofluid Lautsprecher" class="w-full h-64 object-contain bg-white p-4">
+                <div class="p-6 bg-gray-50">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Tanzendes Ferrofluid</h3>
+                    <p class="text-gray-600 mb-4 h-16 overflow-hidden text-sm">Das magnetische Fluid, das auf den Rhythmus deiner Musik reagiert. Wie ein Symbiont in der Flasche!</p>
+                    <a href="DEIN_AMAZON_LINK_HIER" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
                         Auf Amazon ansehen
                     </a>
                 </div>
             </div>
 
-            <!-- Produkt 2: RGB Lightbar (Platzhalter) -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src="https://m.media-amazon.com/images/I/71u9s9E0fML._AC_SL1500_.jpg" alt="RGB Lightbar" class="w-full h-64 object-cover">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Smarte RGB Lightbar</h3>
-                    <p class="text-gray-600 mb-4 h-16 overflow-hidden">Perfekte Hintergrundbeleuchtung für den Monitor. Reagiert auf Sound und wird per App gesteuert.</p>
-                    <a href="DEIN_AMAZON_LINK_HIER" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors">
-                        Auf Amazon ansehen
+            <!-- Produkt 2: Platzhalter für das nächste Video -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <img src="https://via.placeholder.com/600x400?text=Bild+folgt" alt="Produkt 2" class="w-full h-64 object-cover">
+                <div class="p-6 bg-gray-50">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Nächstes Gadget</h3>
+                    <p class="text-gray-600 mb-4 h-16 overflow-hidden text-sm">Hier kommt bald das nächste Produkt aus meinen Videos hin.</p>
+                    <a href="#" class="block w-full text-center bg-gray-200 text-gray-500 font-bold py-3 px-4 rounded-lg cursor-not-allowed">
+                        Bald verfügbar
                     </a>
                 </div>
             </div>
-
-            <!-- Weitere Produkte kannst du nach diesem Muster einfach kopieren und einfügen -->
 
         </div>
     </main>
 
     <!-- Footer mit Impressum & Datenschutz -->
-    <footer class="bg-gray-800 text-white py-8 text-center mt-12">
+    <footer class="bg-slate-900 text-white py-8 text-center mt-12">
         <div class="max-w-6xl mx-auto px-4">
-            <p class="mb-4">© 2026 SmartGekauft. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
-            <div class="space-x-4 text-sm text-gray-400">
-                <a href="impressum.html" class="hover:text-white">Impressum</a>
-                <a href="datenschutz.html" class="hover:text-white">Datenschutzerklärung</a>
+            <p class="mb-4 text-gray-400 text-sm">© 2026 SmartGekauft. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
+            <div class="space-x-4 text-sm">
+                <a href="impressum.html" class="text-gray-400 hover:text-white transition-colors">Impressum</a>
+                <a href="datenschutz.html" class="text-gray-400 hover:text-white transition-colors">Datenschutzerklärung</a>
             </div>
         </div>
     </footer>
