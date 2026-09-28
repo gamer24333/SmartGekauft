@@ -38,24 +38,38 @@
         </div>
     </header>
 
-    <!-- Produkte Grid -->
+    <!-- Produkte Bereich -->
     <main id="produkte" class="max-w-6xl mx-auto py-16 px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Meine Favoriten</h2>
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Meine Favoriten</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Suchfeld (NEU) -->
+        <div class="max-w-md mx-auto mb-12">
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <span class="text-gray-500">🔍</span>
+                </div>
+                <input type="text" id="searchInput" placeholder="Suche nach Gadgets, Marken..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-shadow text-gray-900">
+            </div>
+            <!-- Fehlermeldung, wenn nichts gefunden wird (versteckt) -->
+            <p id="noResultsMsg" class="text-center text-gray-500 mt-4 hidden">Keine passenden Gadgets gefunden. 😢</p>
+        </div>
+        
+        <!-- Produkte Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
             
             <!-- Produkt 1: Divoom Pixoo Pixel Art Display -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- HINWEIS: 'product-card' Klasse hinzugefügt -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <!-- Schicker Design-Banner statt Bild/Video -->
                     <div class="w-full h-64 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 flex flex-col items-center justify-center p-6 text-white text-center">
                         <span class="text-5xl mb-3">🕹️</span>
                         <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold">Highlight</span>
                         <h3 class="text-xl font-bold mt-1">Divoom Pixoo Display</h3>
                     </div>
                     <div class="p-6 bg-gray-50">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Divoom Pixoo Pixel Art Display</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Programmierbares 16x16 RGB LED Panel mit Smart Clock, Animationen und Social Media Benachrichtigungen.</p>
+                        <!-- 'product-title' und 'product-desc' für die Suche hinzugefügt -->
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Divoom Pixoo Pixel Art Display</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Programmierbares 16x16 RGB LED Panel mit Smart Clock, Animationen und Social Media Benachrichtigungen.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -66,12 +80,12 @@
             </div>
 
             <!-- Produkt 2: Logitech Maus -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <img src="static/logitech_maus.jpg" alt="Logitech Maus" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Logitech Gaming Maus</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Präzision und Performance für jedes Setup – ideal zum Zocken und Arbeiten.</p>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Logitech Gaming Maus</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Präzision und Performance für jedes Setup – ideal zum Zocken und Arbeiten.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -82,12 +96,12 @@
             </div>
 
             <!-- Produkt 3: Flipper Zero -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <img src="static/flipper-zero.jpg" alt="Flipper Zero" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Multi-Tool Gadget</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Das ultimative Tech-Gadget für Geek-Projekte, RFID, Funk und vieles mehr.</p>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Multi-Tool Gadget</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Das ultimative Tech-Gadget für Geek-Projekte, RFID, Funk und vieles mehr.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -97,18 +111,17 @@
                 </div>
             </div>
 
-            <!-- Produkt 4: Tanzendes Ferrofluid (CSS Banner statt Bild) -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- Produkt 4: Tanzendes Ferrofluid -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <!-- CSS Design-Banner statt Bild -->
                     <div class="w-full h-64 bg-gradient-to-br from-gray-900 via-zinc-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🧲🎶</span>
                         <span class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Sound-Gadget</span>
                         <h3 class="text-xl font-bold mt-1">Ferrofluid Display</h3>
                     </div>
                     <div class="p-6 bg-gray-50">
-                        <h3 class="font-bold text-xl mb-2 text-gray-900">Tanzendes Ferrofluid</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Ein magnetisches Fluid, das im Rhythmus deiner Musik tanzt. Wie ein Symbiont in einer Flasche – ein absolutes optisches Highlight für jedes Setup!</p>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Tanzendes Ferrofluid</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Ein magnetisches Fluid, das im Rhythmus deiner Musik tanzt. Wie ein Symbiont in einer Flasche – ein absolutes optisches Highlight für jedes Setup!</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -132,5 +145,38 @@
         </div>
     </footer>
 
+    <!-- Suchfunktion JavaScript (NEU) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("searchInput");
+            const productCards = document.querySelectorAll(".product-card");
+            const noResultsMsg = document.getElementById("noResultsMsg");
+
+            searchInput.addEventListener("input", function() {
+                const filter = searchInput.value.toLowerCase();
+                let hasVisibleCards = false;
+
+                productCards.forEach(function(card) {
+                    // Durchsucht den Titel und die Beschreibung der jeweiligen Karte
+                    const title = card.querySelector(".product-title").textContent.toLowerCase();
+                    const desc = card.querySelector(".product-desc").textContent.toLowerCase();
+
+                    if (title.includes(filter) || desc.includes(filter)) {
+                        card.style.display = "flex"; // Zeigt die Karte wieder an
+                        hasVisibleCards = true;
+                    } else {
+                        card.style.display = "none"; // Versteckt die Karte
+                    }
+                });
+
+                // Zeige eine "Nichts gefunden"-Nachricht an, falls kein Produkt passt
+                if (hasVisibleCards) {
+                    noResultsMsg.classList.add("hidden");
+                } else {
+                    noResultsMsg.classList.remove("hidden");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
