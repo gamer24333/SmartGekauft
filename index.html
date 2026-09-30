@@ -16,7 +16,11 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold text-blue-600 tracking-tighter">SmartGekauft.</a>
+            <!-- Logo in der Navbar eingebaut -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="static/logo.jpg" alt="SmartGekauft Logo" class="h-10 w-10 object-cover rounded-full shadow-sm border border-gray-200">
+                <span class="text-2xl font-extrabold text-blue-600 tracking-tighter">SmartGekauft.</span>
+            </a>
             <div class="space-x-4">
                 <a href="#produkte" class="text-gray-600 hover:text-blue-600 font-medium">Produkte</a>
             </div>
@@ -25,6 +29,11 @@
 
     <!-- Hero Section (Kopfbereich mit Social Media) -->
     <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <!-- Großes Logo zentriert über dem Text -->
+        <div class="flex justify-center mb-6">
+            <img src="static/logo.jpg" alt="SmartGekauft Kanal Logo" class="h-40 w-40 md:h-48 md:w-48 object-cover rounded-full shadow-2xl border-4 border-slate-700 hover:scale-105 transition-transform duration-300">
+        </div>
+        
         <h1 class="text-4xl md:text-6xl font-bold mb-4">Die besten Gadgets aus meinen Videos</h1>
         <p class="text-xl md:text-2xl max-w-2xl mx-auto opacity-90 mb-8">Hier findest du alle Produkte, die ich getestet und für genial befunden habe.</p>
         
@@ -61,7 +70,7 @@
         <!-- Produkte Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
 
-            <!-- NEUES PRODUKT: 3D Hologramm Projektor -->
+            <!-- PRODUKT: 3D Hologramm Projektor -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-purple-900 via-indigo-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
