@@ -18,7 +18,7 @@
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <!-- Logo in der Navbar eingebaut -->
             <a href="index.html" class="flex items-center gap-3">
-                <img src="static/logo.jpg" alt="SmartGekauft Logo" class="h-10 w-10 object-cover rounded-full shadow-sm border border-gray-200">
+                <img src="static/logo.jpg" alt="SmartGekauft Logo" loading="lazy" class="h-10 w-10 object-cover rounded-full shadow-sm border border-gray-200">
                 <span class="text-2xl font-extrabold text-blue-600 tracking-tighter">SmartGekauft.</span>
             </a>
             <div class="space-x-4">
@@ -31,7 +31,7 @@
     <header class="bg-slate-900 text-white text-center py-20 px-4">
         <!-- Großes Logo zentriert über dem Text -->
         <div class="flex justify-center mb-6">
-            <img src="static/logo.jpg" alt="SmartGekauft Kanal Logo" class="h-40 w-40 md:h-48 md:w-48 object-cover rounded-full shadow-2xl border-4 border-slate-700 hover:scale-105 transition-transform duration-300">
+            <img src="static/logo.jpg" alt="SmartGekauft Kanal Logo" loading="lazy" class="h-40 w-40 md:h-48 md:w-48 object-cover rounded-full shadow-2xl border-4 border-slate-700 hover:scale-105 transition-transform duration-300">
         </div>
         
         <h1 class="text-4xl md:text-6xl font-bold mb-4">Die besten Gadgets aus meinen Videos</h1>
@@ -69,6 +69,30 @@
         
         <!-- Produkte Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
+
+            <!-- NEUES PRODUKT: Freenove Hexapod -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <!-- Fallback CSS Design, falls kein Bild vorhanden -->
+                    <div class="w-full h-64 bg-gradient-to-br from-green-900 via-emerald-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
+                        <span class="text-5xl mb-3">🕷️🤖</span>
+                        <span class="text-xs uppercase tracking-widest text-emerald-400 font-semibold">DIY Robotik</span>
+                        <h3 class="text-xl font-bold mt-1">Hexapod Spider</h3>
+                    </div>
+                    <!-- Falls du dein eigenes Foto vom Hexapod einfügen willst, nutze diesen Code statt dem div oben:
+                    <img src="static/DEIN_BILD_NAME.jpg" alt="Freenove Hexapod" loading="lazy" class="w-full h-64 object-contain bg-white p-4 border-b border-gray-100">
+                    -->
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">FREENOVE Big Hexapod Robot Kit</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Das ultimative Maker-Projekt! Eine selbstbalancierende Roboter-Spinne (angetrieben von einem Raspberry Pi) mit Kamera, Gesichtserkennung, App-Steuerung und 18 Servomotoren.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 bg-gray-50">
+                    <a href="https://link.amazon/B00fvsoxv" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                        Auf Amazon ansehen
+                    </a>
+                </div>
+            </div>
 
             <!-- PRODUKT: 3D Hologramm Projektor -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
@@ -133,7 +157,7 @@
             <!-- Produkt 2: Logitech Maus -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <img src="static/logitech_maus.jpg" alt="Logitech Maus" class="w-full h-64 object-contain bg-white p-4">
+                    <img src="static/logitech_maus.jpg" alt="Logitech Maus" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Logitech Gaming Maus</h3>
                         <p class="product-desc text-gray-600 mb-4 text-sm">Präzision und Performance für jedes Setup – ideal zum Zocken und Arbeiten.</p>
@@ -149,7 +173,7 @@
             <!-- Produkt 3: Flipper Zero -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <img src="static/flipper-zero.jpg" alt="Flipper Zero" class="w-full h-64 object-contain bg-white p-4">
+                    <img src="static/flipper-zero.jpg" alt="Flipper Zero" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Flipper Zero</h3>
                         <p class="product-desc text-gray-600 mb-4 text-sm">Das ultimative Tech-Gadget für Geek-Projekte, RFID, Funk und vieles mehr.</p>
