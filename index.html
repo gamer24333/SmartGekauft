@@ -21,7 +21,6 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <!-- Logo in der Navbar eingebaut -->
             <a href="index.html" class="flex items-center gap-3">
                 <img src="static/logo.jpg" alt="SmartGekauft Logo" loading="lazy" class="h-10 w-10 object-cover rounded-full shadow-sm border border-gray-200">
                 <span class="text-2xl font-extrabold text-blue-600 tracking-tighter">SmartGekauft.</span>
@@ -34,7 +33,6 @@
 
     <!-- Hero Section (Kopfbereich mit Social Media) -->
     <header class="bg-slate-900 text-white text-center py-20 px-4">
-        <!-- Großes Logo zentriert über dem Text -->
         <div class="flex justify-center mb-6">
             <img src="static/logo.jpg" alt="SmartGekauft Kanal Logo" loading="lazy" class="h-40 w-40 md:h-48 md:w-48 object-cover rounded-full shadow-2xl border-4 border-slate-700 hover:scale-105 transition-transform duration-300">
         </div>
@@ -77,14 +75,39 @@
                 </div>
                 <input type="text" id="searchInput" placeholder="Suche nach Gadgets, Marken..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm transition-shadow text-gray-900">
             </div>
-            <!-- Fehlermeldung, wenn nichts gefunden wird (versteckt) -->
             <p id="noResultsMsg" class="text-center text-gray-500 mt-4 hidden">Keine passenden Gadgets gefunden. 😢</p>
         </div>
         
         <!-- Produkte Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
 
-            <!-- NEUES PRODUKT: Ordilend Tastatur Reinigungsset -->
+            <!-- Flipper Zero (JETZT MIT ZUBEHÖR-LINK) -->
+            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="static/flipper-zero.jpg" alt="Flipper Zero" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Flipper Zero</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Das ultimative Tech-Gadget für Geek-Projekte, RFID, Funk und vieles mehr.</p>
+                        
+                        <!-- NEU: Zubehör-Bereich für die SD-Karte -->
+                        <div class="mt-4 p-3 bg-blue-50 border border-blue-100 rounded-lg">
+                            <p class="text-xs font-bold text-blue-800 uppercase tracking-wide mb-1">Empfohlenes Zubehör</p>
+                            <a href="https://link.amazon/B0cwXgf5I" target="_blank" class="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                <span>💾</span>
+                                <span class="underline decoration-blue-300 decoration-2 underline-offset-2">SanDisk 64GB MicroSD-Karte (Pflicht für Updates!)</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="p-6 pt-0 bg-gray-50">
+                    <a href="https://link.amazon/B0aKkmcye" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                        Auf Amazon ansehen
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ordilend Tastatur Reinigungsset -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-teal-900 via-cyan-800 to-blue-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
@@ -104,11 +127,11 @@
                 </div>
             </div>
 
-            <!-- PRODUKT: Freenove Hexapod -->
+            <!-- Freenove Hexapod -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-green-900 via-emerald-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
-                        <span class="text-5xl mb-3">🕷️🤖</span>
+                        <span class="text-5xl mb-3">🕷️️🤖</span>
                         <span class="text-xs uppercase tracking-widest text-emerald-400 font-semibold">DIY Robotik</span>
                         <h3 class="text-xl font-bold mt-1">Hexapod Spider</h3>
                     </div>
@@ -124,7 +147,7 @@
                 </div>
             </div>
 
-            <!-- PRODUKT: 3D Hologramm Projektor -->
+            <!-- 3D Hologramm Projektor -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-purple-900 via-indigo-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
@@ -144,7 +167,7 @@
                 </div>
             </div>
             
-            <!-- PRODUKT: Shargeek 170 Powerbank -->
+            <!-- Shargeek 170 Powerbank -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-gray-900 via-slate-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
@@ -164,7 +187,7 @@
                 </div>
             </div>
 
-            <!-- PRODUKT: Divoom Pixoo Pixel Art Display -->
+            <!-- Divoom Pixoo Pixel Art Display -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 flex flex-col items-center justify-center p-6 text-white text-center">
@@ -184,7 +207,7 @@
                 </div>
             </div>
 
-            <!-- PRODUKT: Logitech Maus -->
+            <!-- Logitech Maus -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <img src="static/logitech_maus.jpg" alt="Logitech Maus" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
@@ -200,23 +223,7 @@
                 </div>
             </div>
 
-            <!-- PRODUKT: Flipper Zero -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
-                <div>
-                    <img src="static/flipper-zero.jpg" alt="Flipper Zero" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
-                    <div class="p-6 bg-gray-50">
-                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Flipper Zero</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Das ultimative Tech-Gadget für Geek-Projekte, RFID, Funk und vieles mehr.</p>
-                    </div>
-                </div>
-                <div class="p-6 pt-0 bg-gray-50">
-                    <a href="https://link.amazon/B0aKkmcye" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
-                        Auf Amazon ansehen
-                    </a>
-                </div>
-            </div>
-
-            <!-- PRODUKT: Tanzendes Ferrofluid -->
+            <!-- Tanzendes Ferrofluid -->
             <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-gray-900 via-zinc-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
