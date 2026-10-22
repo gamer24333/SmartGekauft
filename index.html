@@ -78,8 +78,8 @@
             <p id="noResultsMsg" class="text-center text-gray-500 mt-4 hidden">Keine passenden Gadgets gefunden. 😢</p>
         </div>
 
-        <!-- Empfohlene Tools / ElevenLabs mit deinem echten Partner-Link -->
-        <div class="max-w-3xl mx-auto mb-12 bg-white border border-gray-200 rounded-xl p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <!-- Empfohlene Tools / ElevenLabs -->
+        <div id="elevenlabs" class="max-w-3xl mx-auto mb-12 bg-white border border-gray-200 rounded-xl p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
                 <span class="text-3xl">🎙️</span>
                 <div>
@@ -95,8 +95,8 @@
         <!-- Produkte Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
 
-            <!-- NEU: Magische Plasmakugel (Ganz oben!) -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-purple-500 relative flex flex-col justify-between">
+            <!-- Magische Plasmakugel -->
+            <div id="plasmakugel" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-purple-500 relative flex flex-col justify-between">
                 <div class="absolute top-0 right-0 bg-purple-500 text-white font-bold text-xs uppercase px-3 py-1 rounded-bl-lg">Neues Video!</div>
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-black via-purple-900 to-indigo-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
@@ -117,7 +117,7 @@
             </div>
             
             <!-- Transparentes Übungsschloss -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="schloss" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-slate-700 via-gray-600 to-slate-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🔓🗝️</span>
@@ -136,8 +136,8 @@
                 </div>
             </div>
 
-            <!-- Flipper Zero (MIT ZUBEHÖR-LINK) -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- Flipper Zero -->
+            <div id="flipper" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <img src="static/flipper-zero.jpg" alt="Flipper Zero" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
@@ -161,8 +161,8 @@
                 </div>
             </div>
 
-            <!-- Raspberry Pi Pico (Budget-Alternative + Dezent integrierter Skript-Download) -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- Raspberry Pi Pico -->
+            <div id="pico" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🔌💻</span>
@@ -173,7 +173,7 @@
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Raspberry Pi Pico</h3>
                         <p class="product-desc text-gray-600 mb-4 text-sm">Die günstige Flipper Zero Alternative! Perfekt für BadUSB-Skripte, Automatisierungen und eigene Maker-Projekte für unter 5€.</p>
                         
-                        <!-- Dezentes Skript-Paket -->
+                        <!-- Skript-Paket -->
                         <div class="mt-4 p-3 bg-gray-100 border border-gray-200 rounded-lg">
                             <p class="text-xs font-bold text-gray-700 uppercase tracking-wide mb-1">Downloads / Skripte</p>
                             <a href="https://payhip.com/b/TDy54" target="_blank" class="flex items-center gap-2 text-xs text-gray-600 hover:text-blue-600 transition-colors">
@@ -191,7 +191,7 @@
             </div>
 
             <!-- ELEGOO Smart Robot Tank Kit -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="tank" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-red-900 via-red-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🚜📷</span>
@@ -211,7 +211,7 @@
             </div>
 
             <!-- Freenove Hexapod -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="hexapod" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-green-900 via-emerald-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🕷🤖</span>
@@ -231,7 +231,7 @@
             </div>
 
             <!-- Ordilend Tastatur Reinigungsset -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="cleaner" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-teal-900 via-cyan-800 to-blue-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🧼⌨️</span>
@@ -251,7 +251,7 @@
             </div>
 
             <!-- 3D Hologramm Projektor -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="hologramm" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-purple-900 via-indigo-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🛸✨</span>
@@ -271,7 +271,7 @@
             </div>
             
             <!-- Shargeek 170 Powerbank -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="shargeek" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-gray-900 via-slate-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🔋⚡</span>
@@ -291,7 +291,7 @@
             </div>
 
             <!-- Divoom Pixoo Pixel Art Display -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="divoom" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 flex flex-col items-center justify-center p-6 text-white text-center">
                         <span class="text-5xl mb-3">🕹</span>
@@ -311,7 +311,7 @@
             </div>
 
             <!-- Logitech Maus -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="maus" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <img src="static/logitech_maus.jpg" alt="Logitech Maus" loading="lazy" class="w-full h-64 object-contain bg-white p-4">
                     <div class="p-6 bg-gray-50">
@@ -327,7 +327,7 @@
             </div>
 
             <!-- PlayStation DualSense Edge -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between border-2 border-indigo-500 relative">
+            <div id="dualsense-edge" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-indigo-500 relative flex flex-col justify-between">
                 <div class="absolute top-0 right-0 bg-indigo-500 text-white font-bold text-xs uppercase px-3 py-1 rounded-bl-lg">Profi-Wahl</div>
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-slate-800 via-gray-900 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
@@ -348,7 +348,7 @@
             </div>
 
             <!-- PlayStation DualSense Standard -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="dualsense" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex flex-col items-center justify-center p-6 text-gray-800 text-center border-b border-gray-300">
                         <span class="text-5xl mb-3">🎮⚪</span>
@@ -368,7 +368,7 @@
             </div>
 
             <!-- Tanzendes Ferrofluid -->
-            <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col justify-between">
+            <div id="ferrofluid" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
                     <div class="w-full h-64 bg-gradient-to-br from-gray-900 via-zinc-800 to-black flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
                         <span class="text-5xl mb-3">🧲🎶</span>
@@ -401,35 +401,62 @@
         </div>
     </footer>
 
-    <!-- Suchfunktion JavaScript -->
+    <!-- JavaScript für Suchfunktion & Dynamische URL-Parameter-Sortierung -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // 1. Suche-Logik
             const searchInput = document.getElementById("searchInput");
             const productCards = document.querySelectorAll(".product-card");
             const noResultsMsg = document.getElementById("noResultsMsg");
 
-            searchInput.addEventListener("input", function() {
-                const filter = searchInput.value.toLowerCase();
-                let hasVisibleCards = false;
+            if (searchInput) {
+                searchInput.addEventListener("input", function() {
+                    const filter = searchInput.value.toLowerCase();
+                    let hasVisibleCards = false;
 
-                productCards.forEach(function(card) {
-                    const title = card.querySelector(".product-title").textContent.toLowerCase();
-                    const desc = card.querySelector(".product-desc").textContent.toLowerCase();
+                    productCards.forEach(function(card) {
+                        const titleEl = card.querySelector(".product-title");
+                        const descEl = card.querySelector(".product-desc");
+                        const title = titleEl ? titleEl.textContent.toLowerCase() : "";
+                        const desc = descEl ? descEl.textContent.toLowerCase() : "";
 
-                    if (title.includes(filter) || desc.includes(filter)) {
-                        card.style.display = "flex";
-                        hasVisibleCards = true;
+                        if (title.includes(filter) || desc.includes(filter)) {
+                            card.style.display = "flex";
+                            hasVisibleCards = true;
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+
+                    if (hasVisibleCards) {
+                        noResultsMsg.classList.add("hidden");
                     } else {
-                        card.style.display = "none";
+                        noResultsMsg.classList.remove("hidden");
                     }
                 });
+            }
 
-                if (hasVisibleCards) {
-                    noResultsMsg.classList.add("hidden");
-                } else {
-                    noResultsMsg.classList.remove("hidden");
+            // 2. Dynamische URL-Parameter-Sortierung (?item=NAME)
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetItemId = urlParams.get('item');
+
+            if (targetItemId) {
+                const targetElement = document.getElementById(targetItemId);
+                const productGrid = document.getElementById("productGrid");
+
+                if (targetElement && productGrid) {
+                    // Schiebe das Zielprodukt an Position 1 im Grid
+                    productGrid.prepend(targetElement);
+
+                    // Füge einen sichtbaren, gelb leuchtenden Fokus-Rahmen hinzu
+                    targetElement.classList.add("ring-4", "ring-yellow-400", "scale-[1.02]");
+
+                    // Scrollt sanft und zentriert zum ausgewählten Produkt
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 400);
                 }
-            });
+            }
         });
     </script>
 </body>
