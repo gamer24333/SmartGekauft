@@ -95,41 +95,51 @@
         <!-- Produkte Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
 
-            <!-- Transparentes Übungsschloss -->
-            <div id="schloss" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- NEU: Raspberry Pi 4 Starter Set (Für dein App-Projekt ganz oben!) -->
+            <div id="raspberry" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-blue-500 relative flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-blue-600 text-white font-bold text-xs uppercase px-3 py-1 rounded-bl-lg">App-Server Pflicht!</div>
                 <div>
-                    <div class="w-full h-64 bg-gradient-to-br from-slate-700 via-gray-600 to-slate-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
-                        <span class="text-5xl mb-3">🔓🗝️</span>
-                        <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold">Skill-Training</span>
-                        <h3 class="text-xl font-bold mt-1">Diyife Lockpicking Set</h3>
+                    <div class="w-full h-64 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
+                        <span class="text-5xl mb-3">🍓🖥️</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-300 font-semibold">Tailscale & Remote Hub</span>
+                        <h3 class="text-xl font-bold mt-1">Raspberry Pi 4 Starter Kit</h3>
                     </div>
                     <div class="p-6 bg-gray-50">
-                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">36 Stück Set mit Übungschlösser</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Ein faszinierendes Gadget, um genau zu verstehen, wie mechanische Schlösser von innen funktionieren. Perfekt für Technik-Fans, Maker und als Konzentrations-Training.</p>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Raspberry Pi 4 (2GB) Starter Set</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Das absolute Herzstück für meine PC-Fernsteuerungs-App! Läuft 24/7 als sicherer Server via Tailscale und steuert den Pico an. Inklusive Netzteil, Gehäuse & Micro-SD.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
-                    <a href="https://link.amazon/B02R3OdmU" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                    <a href="https://link.amazon/B0hjIXEIc" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
                         Auf Amazon ansehen
                     </a>
                 </div>
             </div>
 
-            <!-- Magische Plasmakugel -->
-            <div id="plasmakugel" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-purple-500 relative flex flex-col justify-between">
+            <!-- Raspberry Pi Pico (Budget-Alternative & Injektor) -->
+            <div id="pico" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <div class="w-full h-64 bg-gradient-to-br from-black via-purple-900 to-indigo-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
-                        <span class="text-5xl mb-3">⚡🔮</span>
-                        <span class="text-xs uppercase tracking-widest text-purple-300 font-semibold">Touch & Sound Setup</span>
-                        <h3 class="text-xl font-bold mt-1">6" Plasmakugel</h3>
+                    <div class="w-full h-64 bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
+                        <span class="text-5xl mb-3">🔌💻</span>
+                        <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold">Flipper Zero Alternative</span>
+                        <h3 class="text-xl font-bold mt-1">Raspberry Pi Pico</h3>
                     </div>
                     <div class="p-6 bg-gray-50">
-                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Magische 6 Zoll Plasmalampe</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Das geniale Retro-Gadget aus meinem neuesten Video! Reagiert auf Berührung und tanzt synchron zur Musik. Perfekt als Deko für jedes Zimmer oder Gaming-Setup.</p>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Raspberry Pi Pico</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Der geniale Hardware-Injektor direkt am PC für meine Fernsteuerungs-App. Perfekt für BadUSB, Autoclicker und Makros für unter 5€.</p>
+                        
+                        <!-- Skript-Paket -->
+                        <div class="mt-4 p-3 bg-gray-100 border border-gray-200 rounded-lg">
+                            <p class="text-xs font-bold text-gray-700 uppercase tracking-wide mb-1">Downloads / Skripte</p>
+                            <a href="https://payhip.com/b/TDy54" target="_blank" class="flex items-center gap-2 text-xs text-gray-600 hover:text-blue-600 transition-colors">
+                                <span>📄</span>
+                                <span class="underline decoration-gray-300 underline-offset-2">Pico CircuitPython Skript-Paket (0,25 €)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
-                    <a href="https://link.amazon/B0gtwZD8N" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                    <a href="https://link.amazon/B02QTXXV6" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
                         Auf Amazon ansehen
                     </a>
                 </div>
@@ -160,30 +170,41 @@
                 </div>
             </div>
 
-            <!-- Raspberry Pi Pico -->
-            <div id="pico" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
+            <!-- Transparentes Übungsschloss -->
+            <div id="schloss" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
                 <div>
-                    <div class="w-full h-64 bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
-                        <span class="text-5xl mb-3">🔌💻</span>
-                        <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold">Budget-Alternative</span>
-                        <h3 class="text-xl font-bold mt-1">Raspberry Pi Pico</h3>
+                    <div class="w-full h-64 bg-gradient-to-br from-slate-700 via-gray-600 to-slate-900 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
+                        <span class="text-5xl mb-3">🔓🗝️</span>
+                        <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold">Skill-Training</span>
+                        <h3 class="text-xl font-bold mt-1">Diyife Lockpicking Set</h3>
                     </div>
                     <div class="p-6 bg-gray-50">
-                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Raspberry Pi Pico</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Die günstige Flipper Zero Alternative! Perfekt für BadUSB-Skripte, Automatisierungen und eigene Maker-Projekte für unter 5€.</p>
-                        
-                        <!-- Skript-Paket -->
-                        <div class="mt-4 p-3 bg-gray-100 border border-gray-200 rounded-lg">
-                            <p class="text-xs font-bold text-gray-700 uppercase tracking-wide mb-1">Downloads / Skripte</p>
-                            <a href="https://payhip.com/b/TDy54" target="_blank" class="flex items-center gap-2 text-xs text-gray-600 hover:text-blue-600 transition-colors">
-                                <span>📄</span>
-                                <span class="underline decoration-gray-300 underline-offset-2">Pico CircuitPython Skript-Paket (0,25 €)</span>
-                            </a>
-                        </div>
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">36 Stück Set mit Übungschlösser</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Ein faszinierendes Gadget, um genau zu verstehen, wie mechanische Schlösser von innen funktionieren. Perfekt für Technik-Fans, Maker und als Konzentrations-Training.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
-                    <a href="https://link.amazon/B02QTXXV6" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                    <a href="https://link.amazon/B02R3OdmU" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
+                        Auf Amazon ansehen
+                    </a>
+                </div>
+            </div>
+
+            <!-- Magische Plasmakugel -->
+            <div id="plasmakugel" class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="w-full h-64 bg-gradient-to-br from-black via-purple-900 to-indigo-950 flex flex-col items-center justify-center p-6 text-white text-center border-b border-gray-800">
+                        <span class="text-5xl mb-3">⚡🔮</span>
+                        <span class="text-xs uppercase tracking-widest text-purple-300 font-semibold">Touch & Sound Setup</span>
+                        <h3 class="text-xl font-bold mt-1">6" Plasmakugel</h3>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Magische 6 Zoll Plasmalampe</h3>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Das geniale Retro-Gadget aus meinem Video! Reagiert auf Berührung und tanzt synchron zur Musik. Perfekt als Deko für jedes Zimmer oder Gaming-Setup.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 bg-gray-50">
+                    <a href="https://link.amazon/B0gtwZD8N" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg transition-colors shadow-sm">
                         Auf Amazon ansehen
                     </a>
                 </div>
@@ -336,7 +357,7 @@
                     </div>
                     <div class="p-6 bg-gray-50">
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">PlayStation DualSense Edge</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Der ultimative PS5-Controller aus meinem Video! Austauschbare Stick-Module, programmierbare Rücktasten (Paddles) und anpassbare Trigger. Ein massiver Vorteil in Shootern wie Valorant.</p>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Der ultimative PS5-Controller aus meinem Video! Austauschbare Stick-Module, programmierbare Rücktasten (Paddles) und anpassbare Trigger.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -356,7 +377,7 @@
                     </div>
                     <div class="p-6 bg-gray-50">
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Standard DualSense Controller</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Die günstige Standard-Version. Haptisches Feedback und adaptive Trigger sind an Bord, jedoch ohne die anpassbaren Pro-Features des Edge.</p>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Die günstige Standard-Version. Haptisches Feedback und adaptive Trigger sind an Bord.</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
@@ -376,7 +397,7 @@
                     </div>
                     <div class="p-6 bg-gray-50">
                         <h3 class="product-title font-bold text-xl mb-2 text-gray-900">Tanzendes Ferrofluid</h3>
-                        <p class="product-desc text-gray-600 mb-4 text-sm">Ein magnetisches Fluid, das im Rhythmus deiner Musik tanzt. Wie ein Symbiont in einer Flasche – ein absolutes optisches Highlight für jedes Setup!</p>
+                        <p class="product-desc text-gray-600 mb-4 text-sm">Ein magnetisches Fluid, das im Rhythmus deiner Musik tanzt. Ein optisches Highlight für jedes Setup!</p>
                     </div>
                 </div>
                 <div class="p-6 pt-0 bg-gray-50">
